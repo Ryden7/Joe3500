@@ -6,18 +6,33 @@ using System.Threading.Tasks;
 
 namespace LowerCase
 {
+    /// <summary>
+    /// This program opens an input stream and lowercases the entered String
+    /// </summary>
     class LowerCase
     {
         static void Main(string[] args)
         {
-            String line;
-            while ((line = Console.ReadLine()) != null)
+            //Try lowercasing, catch any unforeseen errors
+            try
             {
+                String line;
+                while ((line = Console.ReadLine()) != null)
+                {
+                    //Remove any unncessary spaces
+                    string a = String.Join(" ", line.Split(new string[] { " ", "\t" }, StringSplitOptions.RemoveEmptyEntries));
 
-                string a = String.Join(" ", line.Split(new string[] { " ", "\t" }, StringSplitOptions.RemoveEmptyEntries));
+                    //Print the lowecased string
+                    Console.WriteLine(a.ToLower());
+                }
 
-                Console.WriteLine(a.ToLower());
             }
+            //Catch any errors
+            catch (Exception e)
+            {
+                Console.WriteLine("An error occurred. Please fix this error:" + e);
+            }
+           
         }
     }
 }
