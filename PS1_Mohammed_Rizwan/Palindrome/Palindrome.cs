@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Rizwan Mohammed, CS 3500, u0746436
 namespace Palindrome
 {
     /// <summary>
-    /// Written by Rizwan Mohammed for CS 3500
     /// This program takes an input string and determines whether or not its a Palindrome. If it is, it outputs the same String.
     /// </summary>
     class Palindrome

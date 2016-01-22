@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Rizwan Mohammed, CS 3500, u0746436
+
 namespace LowerCase
 {
     /// <summary>
